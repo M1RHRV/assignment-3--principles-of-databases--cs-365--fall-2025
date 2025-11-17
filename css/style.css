@@ -1,0 +1,101 @@
+:root {
+  --primary-color: #fff;
+  --background-color: #191919;
+  --border-color: #666;
+  --background-color--button: #ff7b00;
+  --legend-content-color: rgb(0, 225, 255);
+  --notification-banner-background-color: #ffc0cb;
+  --drop-down-menu-background-color: #999;
+  --table-row-hover-background-color: #333;
+  --color-six: #4c4c4c;
+  --row-striping-background-color--odd: #262626;
+  --row-striping-background-color--even: #1e1e1e;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  margin-bottom: 100px;
+  font-family: 'IBM Plex Mono', 'Fira Mono', Inconsolata, 'Anonymous Pro', monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  padding: 10px 0;
+}
+
+form fieldset {
+  padding: 10px 20px 20px;
+}
+
+form input,
+form textarea,
+form select {
+  border: 1px solid var(--color-six);
+  padding: 5px;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  margin-top: 8px;
+}
+
+form input:focus,
+form textarea:focus {
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+form input[type="submit"],
+form button {
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+  background-color: var(--color-six);
+  color: var(--primary-color);
+  font-size: .9em;
+  cursor: pointer;
+}
+
+form textarea {
+  width: 100%;
+  min-height: 80px;
+}
+
+table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+table, td, th {
+  border: 1px solid var(--border-color);
+}
+
+table td, table th {
+  padding: 10px;
+}
+
+table thead th {
+  text-transform: uppercase;
+  color: var(--legend-content-color);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: var(--row-striping-background-color--odd);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--row-striping-background-color--even);
+}
+
+table tbody tr:hover {
+  background-color: var(--table-row-hover-background-color);
+}
+
+#error {
+  margin: 25px 0;
+  padding: 25px 0;
+  background-color: var(--notification-banner-background-color);
+  color: var(--background-color--button);
+  text-align: center;
+}
